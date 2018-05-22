@@ -7,4 +7,8 @@ describe('Triangle', function() {
         expect(triangle.side2).toEqual(4);
         expect(triangle.side3).toEqual(5);
     });
+    it('should correctly determine whether three sides are not a triangle', function() {
+        var triangle = new Triangle(12,3,3);
+        expect(triangle.checkType()).toEqual("not a triangle");
+      });
 });
